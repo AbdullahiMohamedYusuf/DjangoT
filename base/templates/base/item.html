@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    {% for shoes in items %}
+        <div>
+            <a href="/room/{{shoes.id}}">
+                <h2>{{shoes.id}}</h2>
+            </a>
+            <h1>{{shoes.name}}</h1>
+            <img src={{shoe.imgUrl}} alt="">
+            <h5>${{shoes.price}}</h5>
+            <h6>{{shoes.Sizes}}</h6>
+            <p>{{shoes.Discription}}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
